@@ -12,6 +12,11 @@ class Example
         return x - y;
     }
 
+    void multiplyNumbers(int a, int b)
+    {
+        
+    }
+
     public static void main(String[] args)
     {
         Example ex = new Example();
