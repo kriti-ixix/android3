@@ -8,6 +8,8 @@ class Conditions
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your age: ");
         int age = sc.nextInt();
+        
+        //New comment
 
         if (age > 17)
         {
