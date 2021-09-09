@@ -4,33 +4,34 @@ class ObjectArrays
 {
     public static void main(String[] args)
     {
-        Student[] students = new Student[5];
+        //Student[] stdList = new Student[5];
+        ArrayList<Student> stdList = new ArrayList<Student>();
         Scanner sc = new Scanner(System.in);
 
-        // Student s1 = new Student();
-        // s1.rollno = 1; s1.name = "ABC";
-        // s1.marks = 45.5; s1.subject = "JAVA";
-
-        // students[0] = s1;
-
-        for (int i = 0; i < students.length; i++) 
+        for (int i = 0; i < 5; i++)
         {
             Student std = new Student();
-
+            System.out.print("Enter roll no: ");
             std.rollno = sc.nextInt();
+            System.out.print("Enter name: ");
             std.name = sc.next();
+            System.out.print("Enter marks: ");
             std.marks = sc.nextFloat();
-            std.subject = sc.next();
+
+            //stdList[i] = std;
+            stdList.add(std);
+        }
+
+        for (Student std: stdList)
+        {
             
-            students[i] = std;
         }
     }
 }
 
 class Student
 {
-   int rollno;
-   String name;
-   float marks;
-   String subject; 
+    String name;
+    float marks; 
+    int rollno;
 }
